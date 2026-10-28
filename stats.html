@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статистика — Домашняя библиотека</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><span class="logo__long">Домашняя библиотека</span><span class="logo__short">Моя библиотека</span></a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Каталог</a>
+        <a class="nav__link" href="shelf.html">Полка</a>
+        <a class="nav__link nav__link--active" href="stats.html">Статистика</a>
+        <a class="nav__link" href="reading.html">Хочу прочитать</a>
+      </nav>
+      <a class="header__add" href="add.html">+<span class="header__add-text"> Добавить<span class="header__add-long"> книгу</span></span></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1 class="page-title">Статистика чтения</h1>
+      <select class="select">
+        <option>2026</option>
+        <option>2025</option>
+        <option>2024</option>
+      </select>
+    </div>
+
+    <div class="tiles">
+      <div class="tile">
+        <p class="tile__label">Прочитано в 2026</p>
+        <p class="tile__value">42 книги</p>
+        <p class="tile__note">на 9 больше, чем в 2025</p>
+      </div>
+      <div class="tile">
+        <p class="tile__label">Страниц</p>
+        <p class="tile__value">13 480</p>
+        <p class="tile__note">в среднем 321 на книгу</p>
+      </div>
+      <div class="tile">
+        <p class="tile__label">Любимый автор</p>
+        <p class="tile__value tile__value--name">Станислав Лем</p>
+        <p class="tile__note">6 книг, средняя оценка 4,8</p>
+      </div>
+      <div class="tile">
+        <p class="tile__label">Средняя оценка</p>
+        <p class="tile__value">4,3</p>
+        <p class="stars">★★★★<span>★</span></p>
+      </div>
+    </div>
+
+    <div class="panels">
+      <section class="panel">
+        <h2 class="panel__title">Прочитано по месяцам</h2>
+        <p class="muted">2026 год, книг в месяц</p>
+        <div class="chart">
+          <div class="chart__col">4<div class="chart__bar" style="height: 53%"></div><span class="chart__month">Янв</span></div>
+          <div class="chart__col">3<div class="chart__bar" style="height: 40%"></div><span class="chart__month">Фев</span></div>
+          <div class="chart__col">5<div class="chart__bar" style="height: 67%"></div><span class="chart__month">Мар</span></div>
+          <div class="chart__col">2<div class="chart__bar" style="height: 27%"></div><span class="chart__month">Апр</span></div>
+          <div class="chart__col">4<div class="chart__bar" style="height: 53%"></div><span class="chart__month">Май</span></div>
+          <div class="chart__col">6<div class="chart__bar" style="height: 80%"></div><span class="chart__month">Июн</span></div>
+          <div class="chart__col">5<div class="chart__bar" style="height: 67%"></div><span class="chart__month">Июл</span></div>
+          <div class="chart__col">3<div class="chart__bar" style="height: 40%"></div><span class="chart__month">Авг</span></div>
+          <div class="chart__col">4<div class="chart__bar" style="height: 53%"></div><span class="chart__month">Сен</span></div>
+          <div class="chart__col">2<div class="chart__bar" style="height: 27%"></div><span class="chart__month">Окт</span></div>
+          <div class="chart__col">3<div class="chart__bar" style="height: 40%"></div><span class="chart__month">Ноя</span></div>
+          <div class="chart__col">1<div class="chart__bar" style="height: 13%"></div><span class="chart__month">Дек</span></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__title">По жанрам</h2>
+        <div class="genre">
+          <div class="genre__head"><span>Фантастика</span><span class="muted">68 книг</span></div>
+          <div class="genre__track"><div class="genre__fill g1" style="width: 100%"></div></div>
+        </div>
+        <div class="genre">
+          <div class="genre__head"><span>Роман</span><span class="muted">54 книги</span></div>
+          <div class="genre__track"><div class="genre__fill g2" style="width: 79%"></div></div>
+        </div>
+        <div class="genre">
+          <div class="genre__head"><span>Нон-фикшн</span><span class="muted">41 книга</span></div>
+          <div class="genre__track"><div class="genre__fill g3" style="width: 60%"></div></div>
+        </div>
+        <div class="genre">
+          <div class="genre__head"><span>Техническая</span><span class="muted">33 книги</span></div>
+          <div class="genre__track"><div class="genre__fill g6" style="width: 49%"></div></div>
+        </div>
+        <div class="genre">
+          <div class="genre__head"><span>Детектив</span><span class="muted">29 книг</span></div>
+          <div class="genre__track"><div class="genre__fill g5" style="width: 43%"></div></div>
+        </div>
+        <div class="genre">
+          <div class="genre__head"><span>Поэзия</span><span class="muted">23 книги</span></div>
+          <div class="genre__track"><div class="genre__fill g4" style="width: 34%"></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="bottom-nav__link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>Каталог</a>
+    <a class="bottom-nav__link" href="shelf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4v16M10 4v16M15 6l4 14M3 20h18"/></svg>Полка</a>
+    <a class="bottom-nav__link bottom-nav__link--active" href="stats.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20v-8M12 20V5M19 20v-9"/></svg>Статистика</a>
+    <a class="bottom-nav__link" href="reading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Хочу</a>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

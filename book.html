@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Солярис — Домашняя библиотека</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner">
+  <div class="topbar">
+    <a class="topbar__link" href="index.html">←</a>
+    <span>Книга</span>
+    <a class="topbar__link topbar__link--accent" href="add.html">✎</a>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><span class="logo__long">Домашняя библиотека</span><span class="logo__short">Моя библиотека</span></a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Каталог</a>
+        <a class="nav__link" href="shelf.html">Полка</a>
+        <a class="nav__link" href="stats.html">Статистика</a>
+        <a class="nav__link" href="reading.html">Хочу прочитать</a>
+      </nav>
+      <a class="header__add" href="add.html">+<span class="header__add-text"> Добавить<span class="header__add-long"> книгу</span></span></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="breadcrumbs"><a href="index.html">Каталог</a> / Фантастика / Солярис</p>
+
+    <div class="book">
+      <div class="book__aside">
+        <div class="cover cover--big c1"><span class="cover__title">Солярис</span><span class="cover__author">Станислав Лем</span></div>
+        <div class="status">
+          <button class="btn status__btn status__btn--active">Прочитано</button>
+          <button class="btn status__btn">Читаю</button>
+          <button class="btn status__btn">Хочу</button>
+        </div>
+        <div class="book__actions">
+          <a class="btn" href="add.html">Редактировать</a>
+          <button class="btn btn--danger">Удалить</button>
+        </div>
+      </div>
+
+      <div class="book__main">
+        <h1 class="book__title">Солярис</h1>
+        <p class="book__author">Станислав Лем</p>
+        <div class="book__rating">
+          <span class="stars stars--big">★★★★★</span>
+          <span class="muted">моя оценка 5 из 5</span>
+          <span class="tag">Прочитано 12 марта 2026</span>
+        </div>
+
+        <dl class="props">
+          <div class="props__item"><dt>ISBN</dt><dd>978-5-17-114392-5</dd></div>
+          <div class="props__item"><dt>Издательство</dt><dd>АСТ</dd></div>
+          <div class="props__item"><dt>Год издания</dt><dd>1961</dd></div>
+          <div class="props__item"><dt>Жанр</dt><dd>Научная фантастика</dd></div>
+          <div class="props__item"><dt>Страниц</dt><dd>288</dd></div>
+          <div class="props__item"><dt>Полка</dt><dd>А · ряд 2 · место 7</dd></div>
+        </dl>
+
+        <h2 class="section-title">Аннотация</h2>
+        <p class="annotation">Исследовательская станция висит над океаном планеты Солярис — океаном, который, судя по всему, мыслит. Психолог Крис Кельвин прилетает разобраться, что происходит с экипажем, и сталкивается с гостями, которых станция не могла принять. Роман о пределах человеческого понимания и о том, что контакт с иным разумом может оказаться прежде всего встречей с самим собой.</p>
+
+        <div class="where">
+          <div class="where__head">
+            <span>Где стоит: полка А, ряд 2</span>
+            <a href="shelf.html">Открыть полку →</a>
+          </div>
+          <div class="mini-shelf">
+            <span class="c4" style="height: 62px"></span>
+            <span class="g2" style="height: 68px"></span>
+            <span class="g4" style="height: 58px"></span>
+            <span class="g3" style="height: 66px"></span>
+            <span class="g5" style="height: 60px"></span>
+            <span class="g1 mini-shelf__current" style="height: 68px"></span>
+            <span class="g6" style="height: 64px"></span>
+            <span class="c9" style="height: 56px"></span>
+            <span class="c10" style="height: 68px"></span>
+            <span class="c7" style="height: 60px"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="bottom-nav__link bottom-nav__link--active" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>Каталог</a>
+    <a class="bottom-nav__link" href="shelf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4v16M10 4v16M15 6l4 14M3 20h18"/></svg>Полка</a>
+    <a class="bottom-nav__link" href="stats.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20v-8M12 20V5M19 20v-9"/></svg>Статистика</a>
+    <a class="bottom-nav__link" href="reading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Хочу</a>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

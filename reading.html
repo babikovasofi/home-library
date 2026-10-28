@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список для чтения — Домашняя библиотека</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><span class="logo__long">Домашняя библиотека</span><span class="logo__short">Моя библиотека</span></a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Каталог</a>
+        <a class="nav__link" href="shelf.html">Полка</a>
+        <a class="nav__link" href="stats.html">Статистика</a>
+        <a class="nav__link nav__link--active" href="reading.html">Хочу прочитать</a>
+      </nav>
+      <a class="header__add" href="add.html">+<span class="header__add-text"> Добавить<span class="header__add-long"> книгу</span></span></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1 class="page-title">Список для чтения</h1>
+      <select class="select">
+        <option>Мой порядок</option>
+        <option>По объёму</option>
+        <option>По автору</option>
+      </select>
+    </div>
+
+    <div class="summary">
+      <span><b>18 книг</b> в очереди</span>
+      <span>5 420 страниц</span>
+      <span>примерно 4 месяца при нынешнем темпе — 3,5 книги в месяц</span>
+      <span class="summary__hint muted">Порядок меняется стрелками</span>
+    </div>
+
+    <ol class="queue">
+      <li class="queue__item">
+        <span class="queue__cover c1"></span>
+        <div class="queue__info">
+          <a class="queue__title" href="book.html">Дюна</a>
+          <span class="queue__author">Фрэнк Герберт</span>
+          <span class="queue__meta">704 страницы · Полка А · ряд 1</span>
+        </div>
+        <span class="queue__pages">704 страницы</span>
+        <span class="queue__place">Полка А · ряд 1</span>
+        <div class="queue__arrows">
+          <button class="arrow" data-dir="up">↑</button>
+          <button class="arrow" data-dir="down">↓</button>
+        </div>
+        <button class="btn btn--outline queue__start">Начать читать</button>
+      </li>
+      <li class="queue__item">
+        <span class="queue__cover c5"></span>
+        <div class="queue__info">
+          <a class="queue__title" href="book.html">Sapiens</a>
+          <span class="queue__author">Юваль Ной Харари</span>
+          <span class="queue__meta">528 страниц · Полка В · ряд 1</span>
+        </div>
+        <span class="queue__pages">528 страниц</span>
+        <span class="queue__place">Полка В · ряд 1</span>
+        <div class="queue__arrows">
+          <button class="arrow" data-dir="up">↑</button>
+          <button class="arrow" data-dir="down">↓</button>
+        </div>
+        <button class="btn btn--outline queue__start">Начать читать</button>
+      </li>
+      <li class="queue__item">
+        <span class="queue__cover c6"></span>
+        <div class="queue__info">
+          <a class="queue__title" href="book.html">Маятник Фуко</a>
+          <span class="queue__author">Умберто Эко</span>
+          <span class="queue__meta">768 страниц · Полка Б · ряд 2</span>
+        </div>
+        <span class="queue__pages">768 страниц</span>
+        <span class="queue__place">Полка Б · ряд 2</span>
+        <div class="queue__arrows">
+          <button class="arrow" data-dir="up">↑</button>
+          <button class="arrow" data-dir="down">↓</button>
+        </div>
+        <button class="btn btn--outline queue__start">Начать читать</button>
+      </li>
+      <li class="queue__item">
+        <span class="queue__cover c2"></span>
+        <div class="queue__info">
+          <a class="queue__title" href="book.html">Анна Каренина</a>
+          <span class="queue__author">Лев Толстой</span>
+          <span class="queue__meta">864 страницы · Полка А · ряд 2</span>
+        </div>
+        <span class="queue__pages">864 страницы</span>
+        <span class="queue__place">Полка А · ряд 2</span>
+        <div class="queue__arrows">
+          <button class="arrow" data-dir="up">↑</button>
+          <button class="arrow" data-dir="down">↓</button>
+        </div>
+        <button class="btn btn--outline queue__start">Начать читать</button>
+      </li>
+      <li class="queue__item">
+        <span class="queue__cover c8"></span>
+        <div class="queue__info">
+          <a class="queue__title" href="book.html">Совершенный код</a>
+          <span class="queue__author">Стив Макконнелл</span>
+          <span class="queue__meta">896 страниц · Полка В · ряд 1</span>
+        </div>
+        <span class="queue__pages">896 страниц</span>
+        <span class="queue__place">Полка В · ряд 1</span>
+        <div class="queue__arrows">
+          <button class="arrow" data-dir="up">↑</button>
+          <button class="arrow" data-dir="down">↓</button>
+        </div>
+        <button class="btn btn--outline queue__start">Начать читать</button>
+      </li>
+    </ol>
+
+    <p class="more">Показаны первые 5 из 18. <a href="reading.html">Показать все</a></p>
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="bottom-nav__link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>Каталог</a>
+    <a class="bottom-nav__link" href="shelf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4v16M10 4v16M15 6l4 14M3 20h18"/></svg>Полка</a>
+    <a class="bottom-nav__link" href="stats.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20v-8M12 20V5M19 20v-9"/></svg>Статистика</a>
+    <a class="bottom-nav__link bottom-nav__link--active" href="reading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Хочу</a>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

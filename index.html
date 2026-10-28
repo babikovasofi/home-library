@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — Домашняя библиотека</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><span class="logo__long">Домашняя библиотека</span><span class="logo__short">Моя библиотека</span></a>
+      <nav class="nav">
+        <a class="nav__link nav__link--active" href="index.html">Каталог</a>
+        <a class="nav__link" href="shelf.html">Полка</a>
+        <a class="nav__link" href="stats.html">Статистика</a>
+        <a class="nav__link" href="reading.html">Хочу прочитать</a>
+      </nav>
+      <a class="header__add" href="add.html">+<span class="header__add-text"> Добавить<span class="header__add-long"> книгу</span></span></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1 class="page-title">Каталог</h1>
+      <p class="muted">248 книг · 173 прочитано<span class="from-1024"> · 12 полок</span></p>
+    </div>
+
+    <input class="input search" type="text" placeholder="Поиск по названию или аннотации…">
+
+    <div class="filters">
+      <div class="filters__selects">
+        <span class="filters__label">Жанр</span>
+        <select class="select">
+          <option>Все жанры</option>
+          <option>Фантастика</option>
+          <option>Роман</option>
+          <option>Нон-фикшн</option>
+          <option>Поэзия</option>
+          <option>Детектив</option>
+          <option>Техническая</option>
+        </select>
+        <span class="filters__label">Автор</span>
+        <select class="select">
+          <option>Все авторы</option>
+          <option>Станислав Лем</option>
+          <option>А. и Б. Стругацкие</option>
+          <option>Михаил Булгаков</option>
+          <option>Лев Толстой</option>
+        </select>
+        <span class="filters__label">Сортировка</span>
+        <select class="select">
+          <option>По дате добавления</option>
+          <option>По названию</option>
+          <option>По автору</option>
+          <option>По оценке</option>
+        </select>
+      </div>
+      <div class="tabs">
+        <button class="tabs__btn tabs__btn--active" data-status="all">Все</button>
+        <button class="tabs__btn" data-status="read">Прочитано</button>
+        <button class="tabs__btn" data-status="reading">Читаю</button>
+        <button class="tabs__btn" data-status="new">Не начата</button>
+        <button class="tabs__btn tabs__more">Фильтры</button>
+      </div>
+    </div>
+
+    <div class="books">
+      <a class="book-card" href="book.html" data-status="read">
+        <div class="cover c1"><span class="cover__title">Солярис</span><span class="cover__author">Станислав Лем</span></div>
+        <span class="book-card__title">Солярис</span>
+        <p class="book-card__meta">Станислав Лем · 1961</p>
+        <div class="book-card__row"><span class="stars">★★★★★</span><span class="tag">Прочитано</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="read">
+        <div class="cover c2"><span class="cover__title">Пикник на обочине</span><span class="cover__author">А. и Б. Стругацкие</span></div>
+        <span class="book-card__title">Пикник на обочине</span>
+        <p class="book-card__meta">А. и Б. Стругацкие · 1972</p>
+        <div class="book-card__row"><span class="stars">★★★★<span>★</span></span><span class="tag">Прочитано</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="reading">
+        <div class="cover c3"><span class="cover__title">Дом, в котором…</span><span class="cover__author">Мариам Петросян</span></div>
+        <span class="book-card__title">Дом, в котором…</span>
+        <p class="book-card__meta">Мариам Петросян · 2009</p>
+        <div class="book-card__row"><span class="stars">★★★★★</span><span class="tag tag--reading">Читаю</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="read">
+        <div class="cover c4"><span class="cover__title">Мастер и Маргарита</span><span class="cover__author">Михаил Булгаков</span></div>
+        <span class="book-card__title">Мастер и Маргарита</span>
+        <p class="book-card__meta">Михаил Булгаков · 1967</p>
+        <div class="book-card__row"><span class="stars">★★★★★</span><span class="tag">Прочитано</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="new">
+        <div class="cover c5"><span class="cover__title">Сто лет одиночества</span><span class="cover__author">Габриэль Гарсиа Маркес</span></div>
+        <span class="book-card__title">Сто лет одиночества</span>
+        <p class="book-card__meta">Габриэль Гарсиа Маркес · 1967</p>
+        <div class="book-card__row"><span class="stars">★★★★<span>★</span></span><span class="tag tag--new">Не начата</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="read">
+        <div class="cover c6"><span class="cover__title">Град обреченный</span><span class="cover__author">А. и Б. Стругацкие</span></div>
+        <span class="book-card__title">Град обреченный</span>
+        <p class="book-card__meta">А. и Б. Стругацкие · 1989</p>
+        <div class="book-card__row"><span class="stars">★★★★<span>★</span></span><span class="tag">Прочитано</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="read">
+        <div class="cover c7"><span class="cover__title">Краткая история времени</span><span class="cover__author">Стивен Хокинг</span></div>
+        <span class="book-card__title">Краткая история времени</span>
+        <p class="book-card__meta">Стивен Хокинг · 1988</p>
+        <div class="book-card__row"><span class="stars">★★★<span>★★</span></span><span class="tag">Прочитано</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="reading">
+        <div class="cover c8"><span class="cover__title">Чистый код</span><span class="cover__author">Роберт Мартин</span></div>
+        <span class="book-card__title">Чистый код</span>
+        <p class="book-card__meta">Роберт Мартин · 2008</p>
+        <div class="book-card__row"><span class="stars">★★★★<span>★</span></span><span class="tag tag--reading">Читаю</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="new">
+        <div class="cover c9"><span class="cover__title">Анна Каренина</span><span class="cover__author">Лев Толстой</span></div>
+        <span class="book-card__title">Анна Каренина</span>
+        <p class="book-card__meta">Лев Толстой · 1878</p>
+        <div class="book-card__row"><span class="stars">★★★★<span>★</span></span><span class="tag tag--new">Не начата</span></div>
+      </a>
+      <a class="book-card" href="book.html" data-status="read">
+        <div class="cover c10"><span class="cover__title">Вино из одуванчиков</span><span class="cover__author">Рэй Брэдбери</span></div>
+        <span class="book-card__title">Вино из одуванчиков</span>
+        <p class="book-card__meta">Рэй Брэдбери · 1957</p>
+        <div class="book-card__row"><span class="stars">★★★★★</span><span class="tag">Прочитано</span></div>
+      </a>
+    </div>
+
+    <div class="pagination">
+      <a class="pagination__active" href="index.html">1</a>
+      <a href="index.html">2</a>
+      <a href="index.html">3</a>
+      <a href="index.html">Дальше</a>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="bottom-nav__link bottom-nav__link--active" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>Каталог</a>
+    <a class="bottom-nav__link" href="shelf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4v16M10 4v16M15 6l4 14M3 20h18"/></svg>Полка</a>
+    <a class="bottom-nav__link" href="stats.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20v-8M12 20V5M19 20v-9"/></svg>Статистика</a>
+    <a class="bottom-nav__link" href="reading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Хочу</a>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

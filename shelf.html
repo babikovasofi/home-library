@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полка — Домашняя библиотека</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><span class="logo__long">Домашняя библиотека</span><span class="logo__short">Моя библиотека</span></a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Каталог</a>
+        <a class="nav__link nav__link--active" href="shelf.html">Полка</a>
+        <a class="nav__link" href="stats.html">Статистика</a>
+        <a class="nav__link" href="reading.html">Хочу прочитать</a>
+      </nav>
+      <a class="header__add" href="add.html">+<span class="header__add-text"> Добавить<span class="header__add-long"> книгу</span></span></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1 class="page-title">Полка</h1>
+      <select class="select shelf-select">
+        <option>Подсветить по жанру</option>
+        <option>Подсветить по статусу</option>
+        <option>Подсветить по оценке</option>
+      </select>
+    </div>
+    <p class="page-text">Ширина корешка — объём книги, цвет — жанр. Наведите курсор, чтобы увидеть название.</p>
+
+    <div class="legend">
+      <span class="legend__item"><span class="legend__dot g1"></span>Фантастика</span>
+      <span class="legend__item"><span class="legend__dot g2"></span>Роман</span>
+      <span class="legend__item"><span class="legend__dot g3"></span>Нон-фикшн</span>
+      <span class="legend__item"><span class="legend__dot g4"></span>Поэзия</span>
+      <span class="legend__item"><span class="legend__dot g5"></span>Детектив</span>
+      <span class="legend__item"><span class="legend__dot g6"></span>Техническая</span>
+      <span class="legend__total">248 книг на 3 стеллажах</span>
+    </div>
+
+    <section class="shelf">
+      <div class="shelf__head">
+        <h2 class="shelf__title">Полка А<span class="shelf__extra"> · ряд 1–2 · фантастика и романы</span></h2>
+        <span class="muted">35 книг</span>
+      </div>
+      <div class="shelf__books">
+        <a class="spine g1" href="book.html" title="Солярис — Станислав Лем" style="width: 22px; height: 160px"></a>
+        <a class="spine g1" href="book.html" title="Непобедимый — Станислав Лем" style="width: 20px; height: 148px"></a>
+        <a class="spine g1" href="book.html" title="Пикник на обочине — А. и Б. Стругацкие" style="width: 28px; height: 160px"></a>
+        <a class="spine g1" href="book.html" title="Трудно быть богом — А. и Б. Стругацкие" style="width: 18px; height: 140px"></a>
+        <a class="spine g1" href="book.html" title="Град обреченный — А. и Б. Стругацкие" style="width: 22px; height: 152px"></a>
+        <a class="spine g1" href="book.html" title="Понедельник начинается в субботу — А. и Б. Стругацкие" style="width: 18px; height: 146px"></a>
+        <a class="spine g1" href="book.html" title="Дюна — Фрэнк Герберт" style="width: 44px; height: 160px"></a>
+        <a class="spine g1" href="book.html" title="Вино из одуванчиков — Рэй Брэдбери" style="width: 18px; height: 150px"></a>
+        <a class="spine g2" href="book.html" title="Мастер и Маргарита — Михаил Булгаков" style="width: 30px; height: 160px"></a>
+        <a class="spine g2" href="book.html" title="Анна Каренина — Лев Толстой" style="width: 46px; height: 160px"></a>
+        <a class="spine g2" href="book.html" title="Сто лет одиночества — Габриэль Гарсиа Маркес" style="width: 30px; height: 158px"></a>
+        <a class="spine g4" href="book.html" title="Дом, в котором… — Мариам Петросян" style="width: 46px; height: 160px"></a>
+        <a class="spine g1" href="book.html" title="Гиперион — Дэн Симмонс" style="width: 18px; height: 148px"></a>
+        <a class="spine g2" href="book.html" title="Война и мир — Лев Толстой" style="width: 36px; height: 160px"></a>
+        <a class="spine g2" href="book.html" title="Идиот — Фёдор Достоевский" style="width: 18px; height: 152px"></a>
+        <a class="spine g2" href="book.html" title="Братья Карамазовы — Фёдор Достоевский" style="width: 46px; height: 160px"></a>
+        <a class="spine g2" href="book.html" title="Шум и ярость — Уильям Фолкнер" style="width: 20px; height: 136px"></a>
+        <a class="spine g2" href="book.html" title="Обломов — Иван Гончаров" style="width: 26px; height: 150px"></a>
+        <a class="spine g1" href="book.html" title="Основание — Айзек Азимов" style="width: 20px; height: 146px"></a>
+        <a class="spine g1" href="book.html" title="Марсианские хроники — Рэй Брэдбери" style="width: 20px; height: 154px"></a>
+        <a class="spine g1" href="book.html" title="Нейромант — Уильям Гибсон" style="width: 22px; height: 150px"></a>
+        <a class="spine g1" href="book.html" title="451 градус по Фаренгейту — Рэй Брэдбери" style="width: 18px; height: 148px"></a>
+      </div>
+      <p class="shelf__hint">Проведите вбок, чтобы увидеть остальные</p>
+    </section>
+
+    <section class="shelf">
+      <div class="shelf__head">
+        <h2 class="shelf__title">Полка Б<span class="shelf__extra"> · ряд 1–2 · детективы и поэзия</span></h2>
+        <span class="muted">24 книги</span>
+      </div>
+      <div class="shelf__books">
+        <a class="spine g5" href="book.html" title="Маятник Фуко — Умберто Эко" style="width: 40px; height: 160px"></a>
+        <a class="spine g5" href="book.html" title="Убийство в Восточном экспрессе — Агата Кристи" style="width: 18px; height: 150px"></a>
+        <a class="spine g5" href="book.html" title="Десять негритят — Агата Кристи" style="width: 18px; height: 146px"></a>
+        <a class="spine g5" href="book.html" title="Собака Баскервилей — Артур Конан Дойл" style="width: 18px; height: 144px"></a>
+        <a class="spine g5" href="book.html" title="Имя розы — Умберто Эко" style="width: 44px; height: 160px"></a>
+        <a class="spine g4" href="book.html" title="Стихотворения — Анна Ахматова" style="width: 18px; height: 154px"></a>
+        <a class="spine g4" href="book.html" title="Стихотворения — Марина Цветаева" style="width: 18px; height: 152px"></a>
+        <a class="spine g4" href="book.html" title="Стихотворения — Борис Пастернак" style="width: 18px; height: 156px"></a>
+        <a class="spine g4" href="book.html" title="Стихотворения — Осип Мандельштам" style="width: 26px; height: 160px"></a>
+        <a class="spine g4" href="book.html" title="Евгений Онегин — Александр Пушкин" style="width: 18px; height: 148px"></a>
+        <a class="spine g2" href="book.html" title="Преступление и наказание — Фёдор Достоевский" style="width: 18px; height: 140px"></a>
+        <a class="spine g2" href="book.html" title="Анна Каренина — Лев Толстой" style="width: 40px; height: 160px"></a>
+        <a class="spine g5" href="book.html" title="Шерлок Холмс — Артур Конан Дойл" style="width: 38px; height: 160px"></a>
+        <a class="spine g2" href="book.html" title="Белая гвардия — Михаил Булгаков" style="width: 44px; height: 160px"></a>
+        <a class="spine g4" href="book.html" title="Лирика — Сергей Есенин" style="width: 18px; height: 138px"></a>
+        <a class="spine g2" href="book.html" title="Отцы и дети — Иван Тургенев" style="width: 18px; height: 146px"></a>
+      </div>
+      <p class="shelf__hint">Проведите вбок, чтобы увидеть остальные</p>
+    </section>
+
+    <section class="shelf">
+      <div class="shelf__head">
+        <h2 class="shelf__title">Полка В<span class="shelf__extra"> · ряд 1 · нон-фикшн и техническая</span></h2>
+        <span class="muted">28 книг</span>
+      </div>
+      <div class="shelf__books">
+        <a class="spine g6" href="book.html" title="Совершенный код — Стив Макконнелл" style="width: 34px; height: 160px"></a>
+        <a class="spine g6" href="book.html" title="Чистый код — Роберт Мартин" style="width: 40px; height: 160px"></a>
+        <a class="spine g6" href="book.html" title="Рефакторинг — Мартин Фаулер" style="width: 24px; height: 156px"></a>
+        <a class="spine g6" href="book.html" title="Грокаем алгоритмы — Адитья Бхаргава" style="width: 24px; height: 158px"></a>
+        <a class="spine g6" href="book.html" title="Паттерны проектирования — Банда четырёх" style="width: 46px; height: 160px"></a>
+        <a class="spine g6" href="book.html" title="Структура и интерпретация программ — Абельсон, Сассман" style="width: 40px; height: 160px"></a>
+        <a class="spine g6" href="book.html" title="Компьютерные сети — Эндрю Таненбаум" style="width: 24px; height: 154px"></a>
+        <a class="spine g3" href="book.html" title="Думай медленно… решай быстро — Даниэль Канеман" style="width: 18px; height: 150px"></a>
+        <a class="spine g3" href="book.html" title="Sapiens — Юваль Ной Харари" style="width: 34px; height: 160px"></a>
+        <a class="spine g3" href="book.html" title="Ружья, микробы и сталь — Джаред Даймонд" style="width: 34px; height: 160px"></a>
+        <a class="spine g3" href="book.html" title="Эгоистичный ген — Ричард Докинз" style="width: 34px; height: 160px"></a>
+        <a class="spine g3" href="book.html" title="Краткая история времени — Стивен Хокинг" style="width: 18px; height: 148px"></a>
+        <a class="spine g1" href="book.html" title="Солярис — Станислав Лем" style="width: 18px; height: 152px"></a>
+        <a class="spine g3" href="book.html" title="Происхождение видов — Чарльз Дарвин" style="width: 46px; height: 160px"></a>
+        <a class="spine g3" href="book.html" title="Антихрупкость — Нассим Талеб" style="width: 40px; height: 160px"></a>
+        <a class="spine g3" href="book.html" title="Сила привычки — Чарльз Дахигг" style="width: 40px; height: 160px"></a>
+      </div>
+      <p class="shelf__hint">Проведите вбок, чтобы увидеть остальные</p>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a class="bottom-nav__link" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>Каталог</a>
+    <a class="bottom-nav__link bottom-nav__link--active" href="shelf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4v16M10 4v16M15 6l4 14M3 20h18"/></svg>Полка</a>
+    <a class="bottom-nav__link" href="stats.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20v-8M12 20V5M19 20v-9"/></svg>Статистика</a>
+    <a class="bottom-nav__link" href="reading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Хочу</a>
+  </nav>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

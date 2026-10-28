@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавить книгу — Домашняя библиотека</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner no-nav">
+  <div class="topbar">
+    <a class="topbar__link" href="index.html">←</a>
+    <span>Новая книга</span>
+    <span class="topbar__link"></span>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><span class="logo__long">Домашняя библиотека</span><span class="logo__short">Моя библиотека</span></a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Каталог</a>
+        <a class="nav__link" href="shelf.html">Полка</a>
+        <a class="nav__link" href="stats.html">Статистика</a>
+        <a class="nav__link" href="reading.html">Хочу прочитать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-head">
+      <h1 class="page-title">Добавить книгу</h1>
+    </div>
+    <p class="muted lead">Введите ISBN — остальное подставится автоматически. Или заполните карточку вручную.</p>
+
+    <form class="add" action="index.html">
+      <div class="add__main">
+        <div class="isbn">
+          <p class="isbn__title">Быстрое добавление по ISBN</p>
+          <div class="isbn__row">
+            <input class="input" type="text" value="978-5-17-114392-5">
+            <button class="btn btn--dark" type="button">Найти</button>
+            <button class="btn isbn__scan" type="button">Сканировать</button>
+          </div>
+          <p class="isbn__hint muted">Данные берутся из открытого каталога Open Library. Найденные поля можно поправить ниже.</p>
+        </div>
+
+        <p class="divider">или заполните вручную</p>
+
+        <div class="form-grid">
+          <label class="field field--main">Автор
+            <input class="input" type="text" value="Станислав Лем" required>
+          </label>
+          <label class="field field--main">Название
+            <input class="input" type="text" value="Солярис" required>
+          </label>
+          <label class="field">Жанр
+            <select class="select">
+              <option>Научная фантастика</option>
+              <option>Роман</option>
+              <option>Нон-фикшн</option>
+              <option>Поэзия</option>
+              <option>Детектив</option>
+              <option>Техническая</option>
+            </select>
+          </label>
+          <label class="field">Издательство
+            <input class="input" type="text" value="АСТ">
+          </label>
+          <label class="field">Год издания
+            <input class="input" type="number" value="1961">
+          </label>
+          <label class="field">Количество страниц
+            <input class="input" type="number" value="288">
+          </label>
+          <label class="field">Полка
+            <select class="select">
+              <option>А · ряд 1</option>
+              <option selected>А · ряд 2</option>
+              <option>Б · ряд 1</option>
+              <option>Б · ряд 2</option>
+              <option>В · ряд 1</option>
+            </select>
+          </label>
+          <label class="field">Статус
+            <select class="select">
+              <option>Прочитано</option>
+              <option>Читаю</option>
+              <option>Хочу прочитать</option>
+            </select>
+          </label>
+          <label class="field">Оценка
+            <select class="select">
+              <option>5 — отлично</option>
+              <option>4 — хорошо</option>
+              <option>3 — нормально</option>
+              <option>2 — плохо</option>
+              <option>1 — ужасно</option>
+            </select>
+          </label>
+          <label class="field field--wide">Аннотация
+            <textarea class="input" rows="4">Исследовательская станция висит над океаном планеты Солярис — океаном, который, судя по всему, мыслит.</textarea>
+          </label>
+        </div>
+      </div>
+
+      <aside class="add__cover">
+        <p class="field">Обложка</p>
+        <div class="cover cover--big c1"><span class="cover__title">Солярис</span><span class="cover__author">Станислав Лем</span></div>
+        <p class="add__found muted">Найдена по ISBN в Open Library</p>
+        <div class="add__cover-btns">
+          <button class="btn" type="button">Загрузить свою</button>
+          <button class="btn" type="button">Убрать</button>
+        </div>
+      </aside>
+
+      <div class="add__buttons">
+        <a class="btn" href="index.html">Отмена</a>
+        <button class="btn btn--accent" type="submit">Сохранить книгу</button>
+        <span class="add__note muted">Обязательные поля: автор и название</span>
+      </div>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
